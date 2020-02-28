@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../fonts/GothamMedium.eot');
+    src: url('../fonts/GothamMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamMedium.woff2') format('woff2'), url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'GothamMedium', 'Times New Roman', Times, serif;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 10px;
+}
+
+#header {
+    background: #fff;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    right: 0;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, .15);
+}
+
+#header .header-logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    padding: 20px;
+    align-items: center;
+}
+
+#header .header-logo img {
+    width: 120px;
+    height: 25px;
+}
+
+#header nav#header-navigation {
+    width: 64%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header nav#header-navigation ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#header nav#header-navigation ul li a {
+    padding: 21px;
+    font-size: 14px;
+    color: #54595f;
+    font-weight: 600;
+}
+
+#header nav#header-navigation ul li ul li {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    width: 224px;
+}
+
+#header nav#header-navigation ul li ul li a {
+    padding: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#header nav#header-navigation ul li ul li:hover {
+    background: #ededed;
+}
+
+#header nav#header-navigation ul li ul li:hover a {
+    color: #ff6f61;
+    border: none;
+}
+
+#header .header-btn__treatable {
+    display: flex;
+    width: 20%;
+    padding: 17px;
+    transition: all ease 0.1s;
+    justify-content: center;
+}
+
+#header .header-btn__treatable a {
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+    background: #ff6f61;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 3px solid #ff6f61;
+}
+
+#header .header-btn__treatable a:hover {
+    background: #ffffff;
+    color: #ff6f61;
+}
+
+#header .header-btn__treatable:hover {
+    padding-top: 12px;
+    padding-bottom: 22px;
+}
+
+ul.nav-lever-2 {
+    position: absolute;
+    top: 45px;
+    display: none;
+    background: #f2f2f2;
+}
+
+#header nav#header-navigation a:hover {
+    border-bottom: 3px solid #ff6f61;
+}
+
+#header nav#header-navigation li:hover>ul.nav-lever-2 {
+    display: block;
+}
+
+body #body {
+    height: 1000px;
+}
+
+#footer {
+    background: #fff;
+    padding: 50px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#footer .elementor-element-populated {
+    width: 66%;
+    padding: 0 60px 0 130px;
+    display: flex;
+}
+
+#footer .elementor-element-populated .element-populated--col30 {
+    width: 30%;
+}
+
+#footer .elementor-element-widget {
+    width: 34%;
+}
