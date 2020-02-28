@@ -174,7 +174,8 @@ ul.nav-lever-2 {
 }
 
 body #body {
-    height: 1000px;
+    height: 2000px;
+    background: aqua;
 }
 
 #footer {
@@ -186,14 +187,30 @@ body #body {
 
 #footer .elementor-element-populated {
     width: 66%;
-    padding: 0 60px 0 130px;
+    padding: 0% 5% 0% 11%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#footer .elementor-element-populated .element-populated--col30 {
-    width: 30%;
+#footer .elementor-element-populated .element-populated--col36 {
+    width: 36%;
+}
+
+#footer .elementor-element-populated .element-populated--col28 {
+    width: 28%;
+}
+
+#footer .elementor-element-populated .element-populated--col28 {
+    width: 273px;
+}
+
+#footer .elementor-element-populated .element-populated--col36 .element-populated-email {
+    padding-left: 10px;
 }
 
 #footer .elementor-element-widget {
     width: 34%;
+    display: flex;
+    justify-content: center;
 }
