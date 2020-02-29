@@ -6,8 +6,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../fonts/Gothamlight/GothamLight.eot');
+    src: url('../fonts/Gothamlight/GothamLight.eot?#iefix') format('embedded-opentype'), url('../fonts/Gothamlight/GothamLight.woff2') format('woff2'), url('../fonts/Gothamlight/Gotham-Light.svg#Gotham-Light') format('svg'), url('../fonts/Gothamlight/Gotham-Light.ttf') format('truetype'), url('../fonts/Gothamlight/Gotham-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/Gothambook/GothamBook.eot');
+    src: url('../fonts/Gothambook/GothamBook.eot?#iefix') format('embedded-opentype'), url('../fonts/Gothambook/GothamBook.woff2') format('woff2'), url('../fonts/Gothambook/Gotham-Book.svg#Gotham-Book') format('svg'), url('../fonts/Gothambook/Gotham-Book.ttf') format('truetype'), url('../fonts/Gothambook/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: 'GothamMedium', 'Times New Roman', Times, serif;
     vertical-align: middle;
     vertical-align: -webkit-baseline-middle;
     font-weight: 400;
@@ -18,6 +33,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    font-family: 'GothamBook', 'Times New Roman', Times, serif;
 }
 
 h1,
@@ -70,6 +86,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
+    font-family: "GothamMedium";
     z-index: 9999;
     right: 0;
     box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, .15);
@@ -195,10 +212,7 @@ body #body {
 
 #footer .elementor-element-populated .element-populated--col36 {
     width: 36%;
-}
-
-#footer .elementor-element-populated .element-populated--col28 {
-    width: 28%;
+    font-family: "GothamLight";
 }
 
 #footer .elementor-element-populated .element-populated--col28 {
@@ -207,10 +221,46 @@ body #body {
 
 #footer .elementor-element-populated .element-populated--col36 .element-populated-email {
     padding-left: 10px;
+    font-family: "GothamMedium", sans-serif;
 }
 
 #footer .elementor-element-widget {
     width: 34%;
     display: flex;
     justify-content: center;
+}
+
+#footer .elementor-element-widget .element-widget-container .element-widget-title h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#footer .elementor-element-widget .element-widget-container ul.element-inline-icons li.element-icon {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#footer .elementor-element-widget .element-widget-container ul.element-inline-icons li.element-icon a:hover {
+    color: #fa7268;
+}
+
+#footer .elementor-element-widget .element-widget-container .element-widget-global ul li {
+    display: block;
+    padding: 3px 0;
+}
+
+#footer .elementor-element-widget .element-widget-container .element-widget-global ul li a {
+    color: #fa7268;
+}
+
+#banner {
+    background-image: url("../images/Herobanner_Valentines_Promo_1-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner .banner-content {
+    padding: 32% 0;
+    width: 50%;
 }
