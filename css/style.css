@@ -43,6 +43,15 @@ h6 {
     margin-bottom: 0.5em;
 }
 
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.background-position-relative {
+    position: relative;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1em;
@@ -54,6 +63,7 @@ p {
 
 img {
     width: 100%;
+    border: none;
 }
 
 .text-uppercase {
@@ -84,6 +94,8 @@ a {
 #header {
     background: #fff;
     display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -196,11 +208,6 @@ ul.nav-lever-2 {
     display: block;
 }
 
-body #body {
-    height: 2000px;
-    background: aqua;
-}
-
 #footer {
     background: #fff;
     padding: 50px;
@@ -265,15 +272,24 @@ body #body {
     color: #fa7268;
 }
 
-#banner {
+
+/* #banner {
     background-image: url("../images/Herobanner_Valentines_Promo_1-5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+#banner img {
+    position: relative;
 }
 
 #banner .banner-content {
-    padding: 32% 0;
+    padding: 28% 0;
+    max-width: 1140px;
     width: 50%;
+    position: absolute;
+    top: 0;
+    margin: auto;
 }
 
 #banner .banner-title h3 {
@@ -288,6 +304,7 @@ body #body {
     font-size: 18px;
     letter-spacing: 0.7px;
     line-height: 25px;
+    width: 50%;
     font-family: 'GothamBook';
 }
 
@@ -313,4 +330,154 @@ body #body {
     color: #fff;
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+.elementor-background-over {
+    background: #fff;
+    padding: 30px 0;
+}
+
+.elementor-background-over .container-video-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.elementor-background-over .container-video-content .elementor-video-become {
+    width: 62%;
+    padding: 60px 0;
+}
+
+.elementor-background-over .elementor-become__title h3 {
+    font-size: 37px;
+    color: #212121;
+    line-height: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.elementor-background-over .elementor-become__title h3 span {
+    color: #ff6f61;
+}
+
+.elementor-background-over .container-video-content .elementor-video-intro {
+    width: 38%;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 10% 0% 2% 2%;
+}
+
+.elementor-background-over .container-video-content .elementor-video-intro p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: "Gothamlight";
+    font-weight: 600;
+    line-height: 30px;
+    color: #212121;
+}
+
+.container-become-difference {
+    position: absolute;
+    top: 0;
+    max-width: 1140px;
+    padding: 10% 0;
+}
+
+.elementor-become-col {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.col-25 {
+    width: 25%;
+    padding: 10px;
+}
+
+.col-33 {
+    width: 33%;
+    padding: 10px;
+}
+
+.elementor-become-col .elementor-widget-container {
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 15px #e4e4e4;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container-become-difference .elementor-become-col .elementor-widget-container .elementor-image-box-img {
+    height: 170px;
+    margin: auto;
+}
+
+.container-become-difference .elementor-become-col .elementor-widget-container .elementor-image-box-img img {
+    width: 153px;
+    transition: all ease 0.3s;
+    margin: auto;
+}
+
+.container-become-difference .elementor-become-col .elementor-widget-container .elementor-image-box-img img:hover {
+    margin-left: -10px;
+    width: 170px;
+}
+
+.container-become-difference .elementor-become-col .elementor-image-box-content .elementor-image-box-title {
+    margin: 30px 0 20px;
+    font-size: 18px;
+    color: #212121;
+    font-family: "Gotham";
+}
+
+.container-become-difference .elementor-become-col .elementor-image-box-content .elementor-image-box-descrip {
+    letter-spacing: -0.56px;
+    line-height: 1.4em;
+}
+
+.container-become-work .elementor-become-col .elementor-image-box-content .elementor-image-box-descrip {
+    color: #212121;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 1.4em;
+}
+
+.container-become-work .elementor-become-col .elementor-image-box-content .elementor-image-box-title {
+    margin: 40px 0 20px;
+    font-size: 30px;
+    color: #ff6f61;
+    font-family: "Gotham";
+    line-height: 1.2em;
+    letter-spacing: -0.5px;
+}
+
+.container-become-work .elementor-become-col .elementor-widget-container {
+    box-shadow: none;
+}
+
+.container-become-work .elementor-become-col .elementor-widget-container .elementor-image-box-img {
+    height: 250px;
+    margin: auto;
+}
+
+.container-become-work .elementor-become-col .elementor-widget-container .elementor-image-box-img img {
+    width: 233px;
+    transition: all ease 0.3s;
+    margin: auto;
+}
+
+.container-become-work .elementor-become-col .elementor-widget-container .elementor-image-box-img img:hover {
+    margin-left: -10px;
+    width: 250px;
+}
+
+.elementor-background-over.background-ff6f61 {
+    text-align: center;
+    background: #ff6f61;
+}
+
+.elementor-background-over.background-ff6f61 .elementor-become__title h3 {
+    color: #fff
+}
+
+.elementor-background-over.background-ff6f61 .elementor-become__title span {
+    color: #212121;
 }
