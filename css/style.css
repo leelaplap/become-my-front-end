@@ -196,11 +196,6 @@ ul.nav-lever-2 {
     display: block;
 }
 
-body #body {
-    height: 2000px;
-    background: aqua;
-}
-
 #footer {
     background: #fff;
     padding: 50px;
@@ -313,4 +308,42 @@ body #body {
     color: #fff;
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+.elementor-background-over {
+    background: #fff;
+}
+
+.elementor-background-over .container-video-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.elementor-background-over .container-video-content .elementor-video-become {
+    width: 62%;
+    padding: 60px 0;
+}
+
+.elementor-background-over .container-video-content .elementor-video-become .elementor-video-become__title h3 {
+    font-size: 37px;
+    color: #212121;
+    line-height: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.elementor-background-over .container-video-content .elementor-video-intro {
+    width: 38%;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 10% 0% 2% 2%;
+}
+
+.elementor-background-over .container-video-content .elementor-video-intro p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: "Gothamlight";
+    font-weight: 600;
+    line-height: 30px;
+    color: #212121;
 }
