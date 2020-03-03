@@ -71,7 +71,7 @@ img {
 }
 
 b {
-    font-family: "Gotham";
+    font-family: "GothamMedium";
 }
 
 ul,
@@ -83,6 +83,10 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.clear {
+    clear: both;
 }
 
 .container {
@@ -148,7 +152,6 @@ a {
     display: block;
     padding: 20px;
     cursor: pointer;
-    width: 224px;
 }
 
 #header nav#header-navigation ul li ul li a {
@@ -197,6 +200,7 @@ ul.nav-lever-2 {
     position: absolute;
     top: 41px;
     display: none;
+    width: 225px;
     background: #f2f2f2;
 }
 
@@ -284,7 +288,7 @@ ul.nav-lever-2 {
 }
 
 #banner .banner-content {
-    padding: 28% 0;
+    padding: 20% 0;
     max-width: 1140px;
     width: 50%;
     position: absolute;
@@ -293,7 +297,7 @@ ul.nav-lever-2 {
 }
 
 #banner .banner-title h3 {
-    font-family: "Gotham";
+    font-family: "GothamMedium";
     font-size: 37px;
     font-weight: 800;
     margin-bottom: 40px;
@@ -305,15 +309,16 @@ ul.nav-lever-2 {
     letter-spacing: 0.7px;
     line-height: 25px;
     width: 50%;
-    font-family: 'GothamBook';
+    font-family: 'Gotham Book';
 }
 
-#banner .banner-btn-treatable {
+.btn-treatable-background-white {
     padding: 10px;
 }
 
-#banner .banner-btn-treatable a {
-    font-family: "Gotham";
+.btn-treatable-background-white a {
+    font-family: "GothamMedium";
+    font-weight: 800;
     padding: 15px 30px;
     background: #fff;
     color: #ff6f61;
@@ -325,7 +330,7 @@ ul.nav-lever-2 {
     display: inline-block;
 }
 
-#banner .banner-btn-treatable a:hover {
+.btn-treatable-background-white a:hover {
     background: #ff6f61;
     color: #fff;
     margin-top: 0;
@@ -334,7 +339,7 @@ ul.nav-lever-2 {
 
 .elementor-background-over {
     background: #fff;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .elementor-background-over .container-video-content {
@@ -353,7 +358,7 @@ ul.nav-lever-2 {
     color: #212121;
     line-height: 1rem;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .elementor-background-over .elementor-become__title h3 span {
@@ -379,28 +384,35 @@ ul.nav-lever-2 {
     position: absolute;
     top: 0;
     max-width: 1140px;
-    padding: 10% 0;
+    padding: 15% 0;
 }
 
 .elementor-become-col {
     display: flex;
     display: -webkit-flex;
+    justify-content: space-around;
 }
 
 .col-25 {
-    width: 25%;
+    width: 24%;
     padding: 10px;
+    box-shadow: 0px 0px 10px 0px #bfbfbf;
+    background: #fff;
+    border-radius: 15px;
 }
 
 .col-33 {
-    width: 33%;
+    width: 31%;
     padding: 10px;
+    box-shadow: 0px 0px 10px 0px #bfbfbf;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .elementor-become-col .elementor-widget-container {
-    padding: 30px;
+    padding: 20px;
     background: #fff;
-    box-shadow: 0px 0px 15px #e4e4e4;
     border-radius: 15px;
     text-align: center;
 }
@@ -425,7 +437,7 @@ ul.nav-lever-2 {
     margin: 30px 0 20px;
     font-size: 18px;
     color: #212121;
-    font-family: "Gotham";
+    font-family: "GothamMedium";
 }
 
 .container-become-difference .elementor-become-col .elementor-image-box-content .elementor-image-box-descrip {
@@ -444,12 +456,12 @@ ul.nav-lever-2 {
     margin: 40px 0 20px;
     font-size: 30px;
     color: #ff6f61;
-    font-family: "Gotham";
+    font-family: "GothamMedium";
     line-height: 1.2em;
     letter-spacing: -0.5px;
 }
 
-.container-become-work .elementor-become-col .elementor-widget-container {
+.container-become-work .elementor-become-col {
     box-shadow: none;
 }
 
@@ -470,8 +482,14 @@ ul.nav-lever-2 {
 }
 
 .elementor-background-over.background-ff6f61 {
+    background-color: #ff6f61;
+    padding: 4%;
+}
+
+.elementor-background-over.background-ff6f61.background-ff6f61-image {
     text-align: center;
-    background: #ff6f61;
+    background-image: url(../images/MY_Are_Become_Braces_For_Me_banner_1-1-1.png);
+    background-repeat: no-repeat;
 }
 
 .elementor-background-over.background-ff6f61 .elementor-become__title h3 {
@@ -480,4 +498,146 @@ ul.nav-lever-2 {
 
 .elementor-background-over.background-ff6f61 .elementor-become__title span {
     color: #212121;
+}
+
+.elementor-background-over.background-ff6f61 .invisible-braces-descrip {
+    color: #fff;
+    font-size: 18px;
+    font-family: "GothamLight";
+}
+
+.elementor-background-over .container-become-payment-option .elementor-become-text-editor p {
+    text-align: center;
+    font-size: 18px;
+    color: #212121;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-price-table__header {
+    font-size: 22px;
+    background-color: #FFFFFF;
+    padding: 40px 0px 30px 0px;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-price-table__price {
+    font-size: 48px;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    font-weight: 700;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px 0px 20px 0px;
+    line-height: 2em;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-price-table__price span.prev-price {
+    font-size: calc(45em/100);
+    margin-right: 5px;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-price-table__price span.behind-price {
+    font-size: calc(50em/100);
+    margin-left: 5px;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-price-table__feature span {
+    color: #ff6f61;
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-become-col.col-33.col-position-relative {
+    position: relative;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-price-table___ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 200px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.elementor-background-over .container-become-payment-option .elementor-price-table___ribbon .elementor-price-table___ribbon-inner {
+    color: #fff;
+    background: #ff6f61;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 6px;
+}
+
+.elementor-background-over.background-eeeeee,
+.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider {
+    background: #eeeeee;
+    border: 4px solid #eeeeee;
+}
+
+.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-control-paging li a {
+    background: #ff6f61;
+    opacity: 0.2;
+}
+
+.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-control-paging li a.flex-active {
+    opacity: 1;
+}
+
+.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-direction-nav a::before {
+    font-size: 33px;
+    color: #ff6f61;
+    text-shadow: none;
+}
+
+.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-caption {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 18px;
+    font-style: italic;
+}
+
+.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider li.css a {
+    border-radius: 0;
+}
+
+.elementor-tongle {
+    max-width: 980px;
+    margin: auto;
+}
+
+.elementor-background-over.background-ff6f61 .elementor-tongle .elementor-tongle-item {
+    margin: 35px 0;
+}
+
+.elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-title {
+    padding: 30px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-title a.title-question {
+    color: #ff6f61;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "GothamMedium";
+}
+
+.elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-title span.element-icon-tongle-right {
+    float: right;
+}
+
+.elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-content {
+    padding: 15px 30px;
+    background: #fff;
+    display: none;
+}
+
+.elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-content p {
+    color: #212121;
+    font-family: "GothamLight";
 }
