@@ -148,7 +148,6 @@ a {
     display: block;
     padding: 20px;
     cursor: pointer;
-    width: 224px;
 }
 
 #header nav#header-navigation ul li ul li a {
@@ -197,6 +196,7 @@ ul.nav-lever-2 {
     position: absolute;
     top: 41px;
     display: none;
+    width: 225px;
     background: #f2f2f2;
 }
 
@@ -308,12 +308,13 @@ ul.nav-lever-2 {
     font-family: 'GothamBook';
 }
 
-#banner .banner-btn-treatable {
+.btn-treatable-background-white {
     padding: 10px;
 }
 
-#banner .banner-btn-treatable a {
+.btn-treatable-background-white a {
     font-family: "GothamMedium";
+    font-weight: 800;
     padding: 15px 30px;
     background: #fff;
     color: #ff6f61;
@@ -325,7 +326,7 @@ ul.nav-lever-2 {
     display: inline-block;
 }
 
-#banner .banner-btn-treatable a:hover {
+.btn-treatable-background-white a:hover {
     background: #ff6f61;
     color: #fff;
     margin-top: 0;
@@ -471,7 +472,11 @@ ul.nav-lever-2 {
 
 .elementor-background-over.background-ff6f61 {
     text-align: center;
-    background: #ff6f61;
+    background-image: url(../images/MY_Are_Become_Braces_For_Me_banner_1-1-1.png);
+    background-repeat: no-repeat;
+    background-color: #ff6f61;
+    padding: 4%;
+    background-attachment: ;
 }
 
 .elementor-background-over.background-ff6f61 .elementor-become__title h3 {
@@ -480,4 +485,11 @@ ul.nav-lever-2 {
 
 .elementor-background-over.background-ff6f61 .elementor-become__title span {
     color: #212121;
+    font-weight: ;
+}
+
+.elementor-background-over.background-ff6f61 .invisible-braces-descrip {
+    color: #fff;
+    font-size: 18px;
+    font-family: "GothamLight";
 }
