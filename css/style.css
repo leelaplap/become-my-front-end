@@ -631,6 +631,10 @@ ul.nav-lever-2 {
     float: right;
 }
 
+.elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-title span.element-icon-tongle-right .element-icon-opened {
+    display: none;
+}
+
 .elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-content {
     padding: 15px 30px;
     background: #fff;
