@@ -86,15 +86,15 @@ var questionAnswer = {
 $(document).ready(function() {
     $.each(questionAnswer, function(index, value) {
         $(questionAnswer[index].question).on("click", function() {
-            $(questionAnswer[index].answer).toggle();
-            if ($(questionAnswer[index].answer).css('display') == "block") {
+            console.log($(questionAnswer[index].answer).is(':visible'));
+            if (!$(questionAnswer[index].answer).is(':visible')) {
                 $(questionAnswer[index].iconClosed).hide();
                 $(questionAnswer[index].iconOpened).show();
-            }
-            if ($(questionAnswer[index].answer).css('display') == "none") {
+            } else {
                 $(questionAnswer[index].iconClosed).show();
                 $(questionAnswer[index].iconOpened).hide();
             }
+            $(questionAnswer[index].answer).slideToggle();
         })
     })
 
