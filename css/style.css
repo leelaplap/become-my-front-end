@@ -631,6 +631,10 @@ ul.nav-lever-2 {
     float: right;
 }
 
+.elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-title span.element-icon-tongle-right .element-icon-opened {
+    display: none;
+}
+
 .elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-content {
     padding: 15px 30px;
     background: #fff;
@@ -640,4 +644,72 @@ ul.nav-lever-2 {
 .elementor-background-over.background-ff6f61 .elementor-tongle .element-tap-content p {
     color: #212121;
     font-family: "GothamLight";
+}
+
+.elementor-background-over .elementor-become-items-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item {
+    width: 47%;
+    margin: 15px;
+    padding: 55px 40px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item:hover {
+    box-shadow: 0px 0px 10px 2px #bfbfbf;
+    border-radius: 25px;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item .elementor-image-box-wrapper {
+    text-align: center;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item .elementor-image-box-wrapper figure.elementor-image-box__img {
+    width: 40%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item .elementor-image-box_content .elementor-image-box_title {
+    font-size: 22px;
+    margin: 45px 0 25px;
+    color: #212121;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item .elementor-image-box_content p.elementor-image-box_description {
+    color: #212121;
+    font-size: 18px;
+    line-height: 1.7em;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item .elementor-btn-text {
+    font-size: 20px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #ff6f61;
+    border-style: solid;
+    border-color: #ff6f61;
+    border-radius: 30px;
+    padding: 16px 25px;
+    margin: 10px 0 0;
+    transition: all ease .3s;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item .elementor-btn-text:hover {
+    margin: 0 0 10px;
+    background: #fff;
+    color: #ff6f61;
+}
+
+.elementor-background-over .elementor-become-items-wrapper .elementor-become-item .elementor-button-wrapper {
+    display: flex;
+    justify-content: center;
 }

@@ -46,52 +46,55 @@
 var questionAnswer = {
     1: {
         question: '#title-1',
-        answer: '#content-1'
+        answer: '#content-1',
+        iconClosed: "#question-icon-closed1",
+        iconOpened: "#question-icon-opened1",
     },
     2: {
         question: '#title-2',
-        answer: '#content-2'
+        answer: '#content-2',
+        iconClosed: "#question-icon-closed2",
+        iconOpened: "#question-icon-opened2",
     },
     3: {
         question: '#title-3',
-        answer: '#content-3'
+        answer: '#content-3',
+        iconClosed: "#question-icon-closed3",
+        iconOpened: "#question-icon-opened3",
     },
     4: {
         question: '#title-4',
-        answer: '#content-4'
+        answer: '#content-4',
+        iconClosed: "#question-icon-closed4",
+        iconOpened: "#question-icon-opened4",
     },
     5: {
         question: '#title-5',
-        answer: '#content-5'
+        answer: '#content-5',
+        iconClosed: "#question-icon-closed5",
+        iconOpened: "#question-icon-opened5",
     },
     6: {
         question: '#title-6',
-        answer: '#content-6'
+        answer: '#content-6',
+        iconClosed: "#question-icon-closed6",
+        iconOpened: "#question-icon-opened6",
     },
 
 };
 
 $(document).ready(function() {
-    // $.each(questionAnswer, function() {
-    $('#title-1').on("click", function() {
-            $('#content-1').slideToggle();
+    $.each(questionAnswer, function(index, value) {
+        $(questionAnswer[index].question).on("click", function() {
+            if (!$(questionAnswer[index].answer).is(':visible')) {
+                $(questionAnswer[index].iconClosed).hide();
+                $(questionAnswer[index].iconOpened).show();
+            } else {
+                $(questionAnswer[index].iconClosed).show();
+                $(questionAnswer[index].iconOpened).hide();
+            }
+            $(questionAnswer[index].answer).slideToggle();
         })
-        // })
-
-    $('#title-2').on("click", function() {
-        $('#content-2').slideToggle();
-    })
-    $('#title-3').on("click", function() {
-        $('#content-3').slideToggle();
-    })
-    $('#title-4').on("click", function() {
-        $('#content-4').slideToggle();
-    })
-    $('#title-5').on("click", function() {
-        $('#content-5').slideToggle();
-    })
-    $('#title-6').on("click", function() {
-        $('#content-6').slideToggle();
     })
 
 })
