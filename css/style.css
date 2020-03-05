@@ -713,3 +713,8 @@ ul.nav-lever-2 {
     display: flex;
     justify-content: center;
 }
+
+.container-become-story-behind-smile .slider .slides .flex-caption2 img.emoji {
+    width: 15px;
+    display: inline-block;
+}
