@@ -86,7 +86,6 @@ var questionAnswer = {
 $(document).ready(function() {
     $.each(questionAnswer, function(index, value) {
         $(questionAnswer[index].question).on("click", function() {
-            console.log($(questionAnswer[index].answer).is(':visible'));
             if (!$(questionAnswer[index].answer).is(':visible')) {
                 $(questionAnswer[index].iconClosed).hide();
                 $(questionAnswer[index].iconOpened).show();
