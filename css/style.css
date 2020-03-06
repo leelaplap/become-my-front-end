@@ -160,10 +160,12 @@ a {
     font-weight: 400;
 }
 
+#header nav#header-navigation ul li ul li.active,
 #header nav#header-navigation ul li ul li:hover {
     background: #ededed;
 }
 
+#header nav#header-navigation ul li ul li a.active,
 #header nav#header-navigation ul li ul li:hover a {
     color: #ff6f61;
     border: none;
@@ -198,14 +200,15 @@ a {
 
 ul.nav-lever-2 {
     position: absolute;
-    top: 41px;
+    top: 42px;
     display: none;
     width: 225px;
     background: #f2f2f2;
 }
 
+#header nav#header-navigation a.active,
 #header nav#header-navigation a:hover {
-    border-bottom: 3px solid #ff6f61;
+    border-bottom: 4px solid #ff6f61;
 }
 
 #header nav#header-navigation li:hover>ul.nav-lever-2 {
