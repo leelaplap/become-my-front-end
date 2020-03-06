@@ -96,6 +96,30 @@ var questionAnswer = {
         iconClosed: "#question-icon-closed6",
         iconOpened: "#question-icon-opened6",
     },
+    7: {
+        question: '#title-7',
+        answer: '#content-7',
+        iconClosed: "#question-icon-closed7",
+        iconOpened: "#question-icon-opened7",
+    },
+    8: {
+        question: '#title-8',
+        answer: '#content-8',
+        iconClosed: "#question-icon-closed8",
+        iconOpened: "#question-icon-opened8",
+    },
+    9: {
+        question: '#title-9',
+        answer: '#content-9',
+        iconClosed: "#question-icon-closed9",
+        iconOpened: "#question-icon-opened9",
+    },
+    10: {
+        question: '#title-10',
+        answer: '#content-10',
+        iconClosed: "#question-icon-closed10",
+        iconOpened: "#question-icon-opened10",
+    },
 
 };
 

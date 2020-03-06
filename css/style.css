@@ -141,6 +141,7 @@ a {
     font-size: 14px;
     color: #54595f;
     font-weight: 600;
+    font-family: "GothamBook";
 }
 
 #header nav#header-navigation ul li i {
@@ -342,7 +343,7 @@ ul.nav-lever-2 {
 
 .elementor-background-over {
     background: #fff;
-    padding: 50px 0;
+    padding: 80px 0 50px;
 }
 
 .elementor-background-over .container-video-content {
@@ -509,7 +510,7 @@ ul.nav-lever-2 {
     font-family: "GothamLight";
 }
 
-.elementor-background-over .container-become-payment-option .elementor-become-text-editor p {
+.elementor-background-over .elementor-become-text-editor p {
     text-align: center;
     font-size: 18px;
     color: #212121;
@@ -582,23 +583,25 @@ ul.nav-lever-2 {
     border: 4px solid #eeeeee;
 }
 
-.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-control-paging li a {
+.elementor-background-over .container .container-become-smiling-about .slider .flexslider .flex-control-paging li a {
     background: #ff6f61;
+    width: 7px;
+    height: 7px;
     opacity: 0.2;
 }
 
-.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-control-paging li a.flex-active {
+.elementor-background-over .container .container-become-smiling-about .slider .flexslider .flex-control-paging li a.flex-active {
     opacity: 1;
 }
 
-.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-direction-nav a::before,
+.elementor-background-over .container .container-become-smiling-about .slider .flexslider .flex-direction-nav a::before,
 .container-become-story-behind-smile .slider2 .flexslider .flex-direction-nav a::before {
     font-size: 33px;
     color: #ff6f61;
     text-shadow: none;
 }
 
-.elementor-background-over.background-eeeeee .container .container-become-smiling-about .slider .flexslider .flex-caption {
+.elementor-background-over .container .container-become-smiling-about .slider .flexslider .flex-caption {
     width: 100%;
     margin-top: 18px;
     font-size: 15px;
@@ -657,6 +660,7 @@ ul.nav-lever-2 {
     display: -ms-flexbox;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 0 0;
 }
 
 .elementor-background-over .elementor-become-items-wrapper .elementor-become-item {
@@ -769,16 +773,16 @@ ul.nav-lever-2 {
     display: none;
 }
 
-.container-become-story-behind-smile .slider2 .flex-direction-nav a {
+.flex-direction-nav a {
     opacity: 1;
 }
 
-.container-become-story-behind-smile .slider2 .flexslider:hover .flex-direction-nav .flex-prev {
+.flexslider:hover .flex-direction-nav .flex-prev {
     opacity: 1;
     left: -50px;
 }
 
-.container-become-story-behind-smile .slider2 .flexslider:hover .flex-direction-nav .flex-next {
+.flexslider:hover .flex-direction-nav .flex-next {
     right: -50px;
     opacity: 1;
 }
