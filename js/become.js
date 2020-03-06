@@ -17,7 +17,7 @@
     });
 
     $window.on("load", function() {
-        $('.flexslider').flexslider({
+        $('.slider .flexslider').flexslider({
             animation: "slide",
             animationSpeed: 400,
             animationLoop: false,
@@ -28,6 +28,22 @@
             start: function(slider) {
                 $('body').removeClass('loading');
                 flexslider = slider;
+            }
+        });
+    });
+
+    $window.on("load", function() {
+        $('.slider2 .flexslider').flexslider({
+            animation: "slide",
+            animationSpeed: 400,
+            animationLoop: false,
+            itemWidth: 419.5,
+            itemMargin: 15,
+            minItems: getGridSize(), // use function to pull in initial value
+            maxItems: getGridSize(), // use function to pull in initial value
+            start: function(slider2) {
+                $('body').removeClass('loading');
+                flexslider = slider2;
             }
         });
     });
