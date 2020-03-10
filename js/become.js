@@ -12,6 +12,12 @@
             (window.innerWidth < 900) ? 2 : 2;
     }
 
+    function getGridSize2() {
+        return (window.innerWidth < 600) ? 2 :
+            (window.innerWidth < 900) ? 2 :
+            (window.innerWidth > 900) ? 3 : 2;
+    }
+
     $(function() {
         SyntaxHighlighter.all();
     });
@@ -20,8 +26,8 @@
         $('.slider .flexslider').flexslider({
             animation: "slide",
             animationSpeed: 400,
-            animationLoop: false,
-            itemWidth: 210,
+            animationLoop: true,
+            itemWidth: 371,
             itemMargin: 35,
             minItems: getGridSize(), // use function to pull in initial value
             maxItems: getGridSize(), // use function to pull in initial value
@@ -36,14 +42,30 @@
         $('.slider2 .flexslider').flexslider({
             animation: "slide",
             animationSpeed: 400,
-            animationLoop: false,
-            itemWidth: 419.5,
+            animationLoop: true,
+            itemWidth: 371,
             itemMargin: 15,
             minItems: getGridSize(), // use function to pull in initial value
             maxItems: getGridSize(), // use function to pull in initial value
-            start: function(slider2) {
+            start: function(slider) {
                 $('body').removeClass('loading');
-                flexslider = slider2;
+                flexslider = slider;
+            }
+        });
+    });
+
+    $window.on("load", function() {
+        $('.slider3 .flexslider').flexslider({
+            animation: "slide",
+            animationSpeed: 400,
+            animationLoop: true,
+            itemWidth: 371,
+            itemMargin: 5,
+            minItems: getGridSize2(), // use function to pull in initial value
+            maxItems: getGridSize2(), // use function to pull in initial value
+            start: function(slider) {
+                $('body').removeClass('loading');
+                flexslider = slider;
             }
         });
     });
@@ -54,6 +76,12 @@
 
         flexslider.vars.minItems = gridSize;
         flexslider.vars.maxItems = gridSize;
+
+
+        var gridSize2 = getGridSize2();
+
+        flexslider.vars.minItems = gridSize2;
+        flexslider.vars.maxItems = gridSize2;
     });
 }());
 
